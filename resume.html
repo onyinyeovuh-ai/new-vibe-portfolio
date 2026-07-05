@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onyinye Ovuh - Resume</title>
+    <style>
+        /* ============================================
+           ATS-COMPLIANT RESUME - Onyinye Ovuh
+           Clean, scannable, professional layout
+           ============================================ */
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding: 40px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* ---- Header / Name Section ---- */
+        .resume-header {
+            text-align: center;
+            border-bottom: 3px solid #1a1a1a;
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+
+        .resume-name {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .resume-title {
+            font-size: 1.1rem;
+            color: #444;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .resume-contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .resume-contact span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .resume-contact a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .resume-contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* ---- Section Styles ---- */
+        .resume-section {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 6px;
+            margin-bottom: 14px;
+        }
+
+        /* ---- Summary ---- */
+        .summary-text {
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* ---- Experience / Projects ---- */
+        .entry {
+            margin-bottom: 18px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        .entry-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .entry-date {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .entry-subtitle {
+            font-size: 0.9rem;
+            color: #444;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .entry-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .entry-list li {
+            font-size: 0.9rem;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 4px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .entry-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #1a1a1a;
+            font-weight: bold;
+        }
+
+        /* ---- Skills ---- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 10px 20px;
+        }
+
+        .skill-category {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #1a1a1a;
+        }
+
+        .skill-items {
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+        /* ---- Education ---- */
+        .education-entry {
+            margin-bottom: 12px;
+        }
+
+        .education-degree {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #1a1a1a;
+        }
+
+        .education-school {
+            font-size: 0.9rem;
+            color: #444;
+        }
+
+        .education-date {
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* ---- Certifications ---- */
+        .cert-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .cert-list li {
+            font-size: 0.9rem;
+            color: #333;
+            margin-bottom: 6px;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .cert-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #22c55e;
+            font-weight: bold;
+        }
+
+        /* ---- Print Styles ---- */
+        @media print {
+            body {
+                padding: 20px;
+                background: white;
+            }
+
+            .resume-header {
+                border-bottom-color: #000;
+            }
+
+            .section-title {
+                border-bottom-color: #000;
+            }
+
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 600px) {
+            body { padding: 20px; }
+            .resume-name { font-size: 1.6rem; }
+            .entry-header { flex-direction: column; }
+            .skills-grid { grid-template-columns: 1fr; gap: 4px; }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+    <!-- ============================================
+         RESUME HEADER
+         ============================================ -->
+    <header class="resume-header">
+        <h1 class="resume-name">ONYINYE OVUH</h1>
+        <p class="resume-title">Aspiring Fullstack Developer</p>
+        <div class="resume-contact">
+            <span>📍 Lagos, Nigeria</span>
+            <span>📧 <a href="mailto:onyinye.ovuh@email.com">onyinye.ovuh@email.com</a></span>
+            <span>📱 +234 801 234 5678</span>
+            <span>🔗 <a href="https://linkedin.com/in/onyinyeovuh" target="_blank">linkedin.com/in/onyinyeovuh</a></span>
+            <span>💻 <a href="https://github.com/onyinyeovuh" target="_blank">github.com/onyinyeovuh</a></span>
+        </div>
+    </header>
+
+    <!-- ============================================
+         PROFESSIONAL SUMMARY
+         ============================================ -->
+    <section class="resume-section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary-text">
+            Motivated and detail-oriented aspiring Fullstack Developer with hands-on experience in building responsive, 
+            user-friendly web applications using HTML, CSS, Tailwind CSS, and JavaScript. Proficient in version control 
+            with Git and GitHub. Passionate about creating impactful digital experiences and continuously learning modern 
+            web technologies. Seeking opportunities to contribute to innovative development teams while growing technical expertise.
+        </p>
+    </section>
+
+    <!-- ============================================
+         TECHNICAL SKILLS
+         ============================================ -->
+    <section class="resume-section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">Frontend:</div>
+            <div class="skill-items">HTML5, CSS3, Tailwind CSS, JavaScript (ES6+), Responsive Design, Flexbox, CSS Grid</div>
+
+            <div class="skill-category">Version Control:</div>
+            <div class="skill-items">Git, GitHub, Branching & Merging, Pull Requests, Code Reviews</div>
+
+            <div class="skill-category">Tools:</div>
+            <div class="skill-items">VS Code, Chrome DevTools, Figma (Basic), npm</div>
+
+            <div class="skill-category">Soft Skills:</div>
+            <div class="skill-items">Problem Solving, Team Collaboration, Time Management, Continuous Learning, Communication</div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS
+         ============================================ -->
+    <section class="resume-section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Personal Portfolio Website</span>
+                <span class="entry-date">2026</span>
+            </div>
+            <p class="entry-subtitle">Technologies: HTML5, CSS3, Responsive Design</p>
+            <ul class="entry-list">
+                <li>Designed and developed a fully responsive, multi-page portfolio website to showcase skills and projects</li>
+                <li>Implemented modern CSS techniques including Flexbox, Grid, animations, and transitions</li>
+                <li>Created a cohesive dark theme with vibrant accent colors for visual appeal</li>
+                <li>Ensured cross-browser compatibility and mobile-first responsive design</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Interactive Todo List Application</span>
+                <span class="entry-date">2026</span>
+            </div>
+            <p class="entry-subtitle">Technologies: JavaScript, DOM Manipulation, LocalStorage</p>
+            <ul class="entry-list">
+                <li>Built a feature-rich todo app with CRUD operations, filtering, and priority levels</li>
+                <li>Implemented persistent data storage using browser LocalStorage API</li>
+                <li>Added keyboard shortcuts and accessibility features for enhanced usability</li>
+                <li>Designed a clean, intuitive UI with smooth animations and transitions</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Weather Dashboard</span>
+                <span class="entry-date">2026</span>
+            </div>
+            <p class="entry-subtitle">Technologies: JavaScript, REST API, Async/Await</p>
+            <ul class="entry-list">
+                <li>Developed a real-time weather dashboard integrating OpenWeatherMap API</li>
+                <li>Implemented city search, current conditions, and 5-day forecast displays</li>
+                <li>Handled API errors gracefully with user-friendly loading states</li>
+                <li>Added geolocation support for automatic local weather detection</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <div class="entry-header">
+                <span class="entry-title">Product Landing Page</span>
+                <span class="entry-date">2026</span>
+            </div>
+            <p class="entry-subtitle">Technologies: HTML5, CSS3, UI/UX Design</p>
+            <ul class="entry-list">
+                <li>Created a conversion-focused landing page with compelling call-to-action sections</li>
+                <li>Designed feature highlights and trust-building elements for user engagement</li>
+                <li>Optimized layout using CSS Grid and Flexbox for responsive behavior</li>
+                <li>Tested across multiple devices to ensure consistent user experience</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================
+         EDUCATION
+         ============================================ -->
+    <section class="resume-section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-entry">
+            <p class="education-degree">Fullstack Development Training Program</p>
+            <p class="education-school">Intensive Hands-On Web Development Bootcamp</p>
+            <p class="education-date">2025 - 2026</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CERTIFICATIONS
+         ============================================ -->
+    <section class="resume-section">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="cert-list">
+            <li>Fullstack Web Development Certification - Completed intensive training with hands-on projects</li>
+            <li>Responsive Web Design Certification - Mastered mobile-first and adaptive design principles</li>
+            <li>JavaScript Algorithms and Data Structures - Strong foundation in problem-solving and logic</li>
+        </ul>
+    </section>
+
+    <!-- ============================================
+         ACHIEVEMENTS
+         ============================================ -->
+    <section class="resume-section">
+        <h2 class="section-title">Achievements</h2>
+        <ul class="entry-list">
+            <li>Built and deployed multiple responsive web applications using modern frameworks</li>
+            <li>Proficient in Git version control and collaborative development workflows</li>
+            <li>Developed strong problem-solving skills through algorithmic challenges and real-world projects</li>
+            <li>Actively contributing to developer communities and mentoring fellow learners</li>
+            <li>Created an ATS-compliant resume and professional portfolio showcasing technical work</li>
+        </ul>
+    </section>
+
+</body>
+</html>

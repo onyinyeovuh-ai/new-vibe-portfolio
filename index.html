@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Onyinye Ovuh - Fullstack Developer Portfolio. Showcasing web development skills, projects, and professional experience.">
+    <title>Onyinye Ovuh | Fullstack Developer</title>
+
+    <!-- Link to shared stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <base target="_blank">
+
+</head>
+<body>
+    
+    <!-- ============================================
+         HEADER & NAVIGATION (Sticky on all pages)
+         ============================================ -->
+    <header class="header" id="header">
+        <!-- Hidden checkbox for CSS-only mobile menu toggle -->
+        <input type="checkbox" id="mobileToggleInput" class="mobile-toggle-input" aria-hidden="true">
+        <div class="header-container">
+            <!-- Logo Section: Logo icon + Name -->
+            <a href="index.html" class="logo-section">
+                <div class="logo-icon">OO</div>
+                <span class="logo-name">Onyinye <span>Ovuh</span></span>
+            </a>
+
+            <!-- Mobile Menu Toggle Button (Hamburger) - uses label + checkbox hack -->
+            <label for="mobileToggleInput" class="mobile-toggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- Navigation Menu (Sticky, appears on all pages) -->
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
+    <main>
+        <!-- ============================================
+             HERO SECTION
+             - Introduces Onyinye Ovuh
+             - Contains demo profile photo
+             - Links to ATS-Compliant Resume/CV
+             ============================================ -->
+        <section class="hero" id="home">
+            <!-- Floating decorative dots for visual interest -->
+            <div class="float-dot float-dot-1"></div>
+            <div class="float-dot float-dot-2"></div>
+            <div class="float-dot float-dot-3"></div>
+
+            <div class="hero-container">
+                <!-- Hero Text Content -->
+                <div class="hero-content">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-title">Onyinye <span class="highlight">Ovuh</span></h1>
+                    <p class="hero-subtitle">Aspiring Fullstack Developer</p>
+                    <p class="hero-description">
+                        Passionate about building beautiful, functional, and user-friendly web applications. 
+                        Currently mastering the art of fullstack development with a focus on modern technologies 
+                        and best practices.
+                    </p>
+
+                    <!-- Call-to-Action Buttons -->
+                    <div class="hero-buttons">
+                        <!-- Link to ATS-Compliant Resume/CV (downloadable) -->
+                        <a href="Onyinye_Ovuh_Resume.pdf" class="btn btn-resume" download>
+                            <i class="fas fa-file-pdf"></i> Download Resume
+                        </a>
+                        <a href="projects.html" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View Projects
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Image (Demo photo) -->
+                <div class="hero-image-wrapper">
+                    <img 
+                        src="./images/me-hero.jpeg" 
+                        alt="Onyinye Ovuh - Fullstack Developer" 
+                        class="hero-image"
+                        loading="eager"
+                    >
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER (Sticky on all pages, max 20% height)
+         ============================================ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div>
+                    <div class="footer-brand">
+                        <div class="footer-brand-icon">OO</div>
+                        <span class="footer-brand-name">Onyinye <span>Ovuh</span></span>
+                    </div>
+                    <p class="footer-desc">
+                        Aspiring Fullstack Developer passionate about creating impactful digital experiences.
+                    </p>
+                    <!-- Social Media Icons -->
+                    <div class="footer-socials">
+                        <a href="https://twitter.com/onyinyeovuh" class="social-icon twitter" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/onyinyeovuh" class="social-icon linkedin" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/onyinyeovuh" class="social-icon github" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/onyinyeovuh" class="social-icon instagram" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><span class="icon">&#8250;</span> Home</a></li>
+                        <li><a href="about.html"><span class="icon">&#8250;</span> About</a></li>
+                        <li><a href="skills.html"><span class="icon">&#8250;</span> Skills</a></li>
+                        <li><a href="projects.html"><span class="icon">&#8250;</span> Projects</a></li>
+                        <li><a href="contact.html"><span class="icon">&#8250;</span> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div>
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="Onyinye_Ovuh_Resume.pdf" download><span class="icon">&#8250;</span> Resume</a></li>
+                        <li><a href="https://github.com/onyinyeovuh" target="_blank"><span class="icon">&#8250;</span> GitHub</a></li>
+                        <li><a href="#"><span class="icon">&#8250;</span> Blog</a></li>
+                        <li><a href="#"><span class="icon">&#8250;</span> Certifications</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column -->
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:onyinye.ovuh@email.com"><span class="icon">&#8250;</span> Email</a></li>
+                        <li><a href="tel:+2348012345678"><span class="icon">&#8250;</span> Phone</a></li>
+                        <li><a href="contact.html"><span class="icon">&#8250;</span> Message</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom: Copyright -->
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2026 Onyinye Ovuh. All Rights Reserved. Built with <span class="heart">&#10084;</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
